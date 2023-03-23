@@ -31,8 +31,7 @@ function App() {
   console.log("Buradayım" + latitude, longitude, weather);
 
   return (
-    <div className="App">
-      <h2>HAVA DURUMU</h2>
+    <div className="App">    
       <HavaDurumu weather={weather} />
     </div>
   );

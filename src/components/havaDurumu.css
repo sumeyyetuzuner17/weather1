@@ -1,0 +1,59 @@
+.havadurumu {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmM-MlfCpFHDGGGH4rZvQPMRoD6EqbmQnqzQ&usqp=CAU");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-size: 100% 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.konum {
+  font-size: medium;
+  font-weight: lighter;
+}
+
+.baslik {
+  text-decoration: underline;
+}
+
+.aciklama {
+  font-size: small;
+  font-weight: lighter;
+}
+.derece {
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.gorsel {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;  
+  align-items: center;
+  font-weight: bold;
+  font-size: large;
+  border-style: solid;
+  border-width: 3px;
+  padding: 1rem;
+
+}
+.nem {
+  width: 50%;
+  text-align: center;
+}
+.rüzgar {
+  width: 50%;
+ 
+}
+.basinc{
+    width: 50%;
+    
+}
