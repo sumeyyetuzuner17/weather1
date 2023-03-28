@@ -1,5 +1,5 @@
 .havadurumu {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmM-MlfCpFHDGGGH4rZvQPMRoD6EqbmQnqzQ&usqp=CAU");
+  background-image: url("https://www.pratikbilgisi.com/upload/stblog/1/23/22/2322medium.jpg");
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -18,6 +18,7 @@
 .konum {
   font-size: medium;
   font-weight: lighter;
+
 }
 
 .baslik {
@@ -27,6 +28,8 @@
 .aciklama {
   font-size: small;
   font-weight: lighter;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 .derece {
   font-size: 65px;
@@ -36,13 +39,14 @@
 .gorsel {
   display: flex;
   justify-content: space-around;
-  margin-top: 100px;  
+  margin-top:50px;  
   align-items: center;
   font-weight: bold;
   font-size: large;
   border-style: solid;
   border-width: 3px;
   padding: 1rem;
+  border-radius: 15px;
 
 }
 .nem {
