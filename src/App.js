@@ -8,11 +8,13 @@ import HavaDurumu from "./components/HavaDurumu";
 
 function App() {
   const [weather, setWeather] = useState();
+  
   const { latitude, longitude } = usePosition();
   const getWeatherData = async (enlem, boylam) => {
     const key = process.env.REACT_APP_WEATHER_API_KEY;
     const dil = navigator.language.split("-")[0];
-
+   
+ 
     console.log(dil)
     try {
       const { data } = await axios.get(
@@ -28,11 +30,10 @@ function App() {
     latitude && longitude && getWeatherData(latitude, longitude);
   }, [latitude, longitude]);
 
-  console.log("Buradayım" + latitude, longitude, weather);
-
   return (
     <div className="App">    
       <HavaDurumu weather={weather} />
+      
     </div>
   );
 }

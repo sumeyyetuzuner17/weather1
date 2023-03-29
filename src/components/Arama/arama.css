@@ -1,0 +1,21 @@
+.arama{
+    display: flex;
+    justify-content: center;
+    
+}
+.arama .arama-input{
+margin-top: 1rem;
+text-align: center;
+border-radius: 10px;
+padding: 3px;
+}
+
+.arama .btn{
+margin-left: 0.5rem;
+margin-top: 1rem;
+text-align: center;
+border-radius: 10px;
+padding: 3px;
+background-color: forestgreen;
+color: aliceblue;
+}

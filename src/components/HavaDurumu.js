@@ -1,6 +1,10 @@
 import React from "react";
 import "./havaDurumu.css";
-import { WiHail, WiSnowWind, WiDaySunny } from "react-icons/wi";
+import { WiHail, WiSnowWind, WiDaySunny ,WiDayCloudyHigh, WiNightThunderstorm} from "react-icons/wi";
+import Arama from "../components/Arama/Arama"
+import Sonuc from "../components/Sonuc/Sonuc"
+
+
 
 const HavaDurumu = (props) => {
   const { weather } = props;
@@ -12,17 +16,20 @@ const HavaDurumu = (props) => {
   const icon = weather.weather.map((data) => data.main).join(",");
   console.log("icon: " + icon);
 
-  const yagmur = "'";
-  const kar = "*";
+  const yagmur = "' ' '";
+  const kar = "* * * *";
 
   return (
     <>
       <div className="dunya">
         <div className="dunyaHarita"></div>
       </div>
-      <div className="animasyon" id="animasyon"></div>
+      <div className="animasyon" id="animasyon">{yagmur}</div>
+
+
       <div className="havadurumu">
         <div className="konum">
+          <p>Konumun</p>
           <h2>{weather.name}</h2>
         </div>
         <div className="tarih">
@@ -33,9 +40,14 @@ const HavaDurumu = (props) => {
           <h3>{weather.weather.map((data) => data.description).join(",")}</h3>
         </div>
         <div className="icon">
-          <p id="yagmur">
+          <p id="yagmur" className="rain">
             {icon == "Rain" && (
               <WiHail style={{ color: "white", marginTop: "0px" }} size={90} />
+            )}
+          </p>
+          <p>
+            {icon == "Drizzle" && (
+              <WiHail style={{ color: "white" }} size={90} />
             )}
           </p>
           <p id="kar">
@@ -43,11 +55,21 @@ const HavaDurumu = (props) => {
               <WiSnowWind style={{ color: "white" }} size={90} />
             )}
           </p>
-          {/* <p>
-            {icon == "Sun" && (
+          <p>
+            {icon == "Clouds" && (
+              <WiDayCloudyHigh style={{ color: "white" }} size={90} />
+            )}
+          </p>
+          <p>
+            {icon == "Clear" && (
               <WiDaySunny style={{ color: "white" }} size={90} />
             )}
-          </p> */}
+          </p>
+          <p>
+            {icon == "Thunderstorm" && (
+              <WiNightThunderstorm style={{ color: "white" }} size={90} />
+            )}
+          </p>
         </div>
         <div className="gorsel">
           <div className="nem">
@@ -62,6 +84,8 @@ const HavaDurumu = (props) => {
             {weather.main.pressure}
           </div>
         </div>
+        <Arama weather={weather}/>
+        <Sonuc weather={weather}/>
       </div>
     </>
   );
