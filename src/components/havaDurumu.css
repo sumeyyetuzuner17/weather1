@@ -1,8 +1,11 @@
+
+
 .havadurumu {
-  background-image: url("https://www.pratikbilgisi.com/upload/stblog/1/23/22/2322medium.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
+  background-color: rgb(12, 12, 131);
+  background-repeat: no-repeat;  
+  background-size: cover; 
+  opacity: 0.8;
+  width: 100%; 
   height: 100%;
   border-radius: 20px;
   background-size: 100% 100%;
@@ -13,38 +16,40 @@
   padding-left: 10px;
   padding-right: 10px;
   font-family: "Times New Roman", Times, serif;
+  
 }
 
 .konum {
-  font-size: medium;
-  font-weight: lighter;
-}
-
-.baslik {
-  text-decoration: underline;
-}
-
-.aciklama {
   font-size: small;
-  font-weight: lighter;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  font-weight: lighter;  /*daha ince normal değere göre*/
+  font-family: "Varela Round";
+  opacity: 0.9;
 }
+
+.tarih {
+  font-family: Comfortaa;
+}
+
 .derece {
-  font-size: 65px;
-  font-weight: bold;
+  font-size: 140px;  
+  font-family: Rubik;
+}
+.ikili_flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 .gorsel {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
-  align-items: center;
-  font-weight: bold;
-  font-size: large;
+  align-items: center;  
+  font-size: small;
+  font-family:cursive;
   border-style: solid;
   border-width: 3px;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 15px;
 }
 .nem {
@@ -58,10 +63,20 @@
   width: 50%;
 }
 
-#yagmur {
+.aciklama {
+  font-family:Comfortaa ;
+  font-size: small;  
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color:white;
+  width: fit-content;
+  margin-top: 50px;
+  opacity: 0.8;
 }
 
-.dunya {
+/* .dunya {
   width: 120px;
   height: 120px;
   background-color: aquamarine;
@@ -70,9 +85,9 @@
   position: absolute;
   right: 540px;
   margin-top: 20px;
-}
+} */
 
-
+/* 
 .dunyaHarita {
   background: url("C:\Users\sumey\Desktop\dunya.jpg");
   width: 120px;
@@ -99,7 +114,7 @@
   right: 550px;
   margin-top: 160px;
  
-}
+} */
 
 /* .rain {
   background-image: linear-gradient(white 1px, transparent 1px), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath d='M0 10L10 0' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E");
@@ -107,11 +122,11 @@
   animation: rain 10s linear infinite;
 } */
 
-@keyframes rain {
+/* @keyframes rain {
   0% {
     background-position: 0px 0px;
   }
   100% {
     background-position: 0px 100px;
   }
-}
+} */

@@ -2,10 +2,12 @@
 
 .App {
 
-width: 27%;
-height: 700px;
+width: 18%;
+height: 530px;
 margin-left: auto;
 margin-right: auto;
-margin-top: 5rem;
+margin-top: 4rem;
+border-radius: 20px;
+
 }
 

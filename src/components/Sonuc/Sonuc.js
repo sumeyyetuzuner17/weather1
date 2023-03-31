@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Sonuc/sonuc.css";
 
-function Sonuc() {
+function Sonuc({ data_ }) {
   return (
     <div className="sonuc">
-      <div className="sehir">istanbul</div>
-      <div className="detay">
-        <div className="derece_">29 derece</div>
-        <div className="durum"> yağmurlu</div>
-      </div>
+          {                                         
+          data_?.data ? <div className="detay">
+          <div className="derece_">{data_?.data ? data_?.data?.main.temp : "Geçersiz Şehir" }</div>
+          <div className="durum"> yağmurlu</div>
+        </div> :
+        <div>
+          
+        </div>
+
+          
+          
+          
+          
+          
+          }
+
+      
     </div>
   );
 }

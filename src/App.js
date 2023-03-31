@@ -8,13 +8,15 @@ import HavaDurumu from "./components/HavaDurumu";
 
 function App() {
   const [weather, setWeather] = useState();
-  
+  const [data_,setData_]=useState([]);
+
+
   const { latitude, longitude } = usePosition();
   const getWeatherData = async (enlem, boylam) => {
     const key = process.env.REACT_APP_WEATHER_API_KEY;
     const dil = navigator.language.split("-")[0];
-   
- 
+    
+     
     console.log(dil)
     try {
       const { data } = await axios.get(
@@ -25,6 +27,7 @@ function App() {
       alert("Hatalı veri girişi yapıldı.");
     }
   };
+  useEffect(()=>console.log("şşşşş",data_),[data_])  
 
   useEffect(() => {
     latitude && longitude && getWeatherData(latitude, longitude);
@@ -32,7 +35,7 @@ function App() {
 
   return (
     <div className="App">    
-      <HavaDurumu weather={weather} />
+      <HavaDurumu weather={weather} data_={data_} setData_={setData_} />
       
     </div>
   );
